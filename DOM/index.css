@@ -1,0 +1,22 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+div{
+  max-width: 500px;
+  width: 100%;
+  background: #fff;
+  margin: 20px auto;
+  border: 1px solid;
+  padding: 30px;
+}
+
+input[type = text]{
+width: 100%;
+border: 1px solid #d5dbd9;
+font-size: 15px;
+padding: 8px;
+border-radius: 3px;
+
+}

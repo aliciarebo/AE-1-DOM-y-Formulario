@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <title>Pizzeria</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="content-box">
+      <div class="left"></div>
+      <form action="/" class="formulario" id="formulario">
+        <header class="header">
+          <h2>Tu pedido</h2>
+        </header>
+        <div class="fcontrol" id="grupoNombre">
+          <label for="fname">Nombre</label>
+          <input type="text" class="formulario_input" id="fname" name="fname" placeholder="Maria">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Campo inválido</small>
+        </div>
+
+        <div class="fcontrol" id="grupoDireccion">
+          <label for="direccion">Dirección</label>
+          <input type="text" class="formulario_input" id="direccion" name="direccion" placeholder="C/Nombre,N,3A">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Este campo no puede estar vacio</small>
+        </div>
+
+        <div class="fcontrol" id="grupoTelefono">
+          <label for="telef">Teléfono</label>
+          <input type="tel" class="formulario_input" name="telef" id="telf" placeholder="123123123">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Campo inválido</small>
+        </div>
+
+        <div class="fcontrol" id="grupoEmail">
+          <label for="email">Correo electrónico</label>
+          <input type="text" class="formulario_input" id="email" name="email" placeholder="maria@gmail.com">
+          <i class="fa-solid fa-circle-check"></i>
+          <i class="fa-solid fa-circle-exclamation"></i>
+          <small>Campo inválido</small>
+        </div>
+
+        <div class="fradio">
+          <label for="tamaño">Elija el tamaño de la pizza:</label>
+          <div class="radio">
+            <input type="radio" name="formradio" id="pequeña" value="pequeña">
+            <label for="pequeña">Pequeña</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="formradio" id="mediana" value="mediana">
+            <label for="mediana">Mediana</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="formradio" id="grande" value="grande">
+            <label for="grande">Grande</label><br>
+          </div>
+        </div>
+
+        <div class="fcheckbox">
+          <label for="ingredientes">Elija los ingredientes:</label>
+          <div class="check">
+            <input type="checkbox" name="pollo" id="pollo">
+            <label for="pollo">Pollo</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="ternera" id="ternera">
+            <label for="ternera">Ternera</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="champiñones" id="champiñones">
+            <label for="champiñones">Champiñones</label>
+          </div>
+          <div class="check">
+            <input type="checkbox" name="queso" id="queso">
+            <label for="queso">Extra de queso</label>
+          </div>
+        </div>
+
+
+        <input type="submit" name="submit" class="submit" value="Procesar el pedido">
+      </form>
+    </div>
+  </div>
+
+</body>
+<script src="pizzeria.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="https://kit.fontawesome.com/a8deeb3975.js" crossorigin="anonymous"></script>
+
+
+</html>
