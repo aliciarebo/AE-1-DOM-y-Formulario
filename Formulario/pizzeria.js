@@ -106,7 +106,6 @@ const validateRadio = (e) => { //Validamos que deba haber una opcion marcada
       break;
     } else {
       radioValid = false;
-      console.log(radioValid)
     }
   }
 
